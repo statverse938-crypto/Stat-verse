@@ -1,0 +1,1618 @@
+{
+  "questions": [
+    {
+      "subject": "English",
+      "question": "What is the capital of France?",
+      "optionA": "Madrid",
+      "optionB": "Paris",
+      "optionC": "Rome",
+      "optionD": "London",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which of these is a synonym for 'happy'?",
+      "optionA": "Sad",
+      "optionB": "Joyful",
+      "optionC": "Angry",
+      "optionD": "Tired",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the past tense of 'go'?",
+      "optionA": "Going",
+      "optionB": "Went",
+      "optionC": "Gone",
+      "optionD": "Goes",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word is a noun?",
+      "optionA": "Run",
+      "optionB": "Quickly",
+      "optionC": "Beautiful",
+      "optionD": "Table",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What does 'ubiquitous' mean?",
+      "optionA": "Rare",
+      "optionB": "Present everywhere",
+      "optionC": "Very small",
+      "optionD": "Very large",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which sentence is grammatically correct?",
+      "optionA": "She don't like apples",
+      "optionB": "She doesn't likes apples",
+      "optionC": "She doesn't like apples",
+      "optionD": "She don't likes apples",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is an antonym for 'brave'?",
+      "optionA": "Cowardly",
+      "optionB": "Strong",
+      "optionC": "Smart",
+      "optionD": "Fast",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word is a verb?",
+      "optionA": "Happiness",
+      "optionB": "Quick",
+      "optionC": "Run",
+      "optionD": "Blue",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the plural of 'child'?",
+      "optionA": "Childs",
+      "optionB": "Children",
+      "optionC": "Childes",
+      "optionD": "Childrens",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which punctuation mark ends a question?",
+      "optionA": ".",
+      "optionB": ",",
+      "optionC": "!",
+      "optionD": "?",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the comparative form of 'good'?",
+      "optionA": "Gooder",
+      "optionB": "Better",
+      "optionC": "Best",
+      "optionD": "Goodest",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word means 'to make better'?",
+      "optionA": "Improve",
+      "optionB": "Worsen",
+      "optionC": "Destroy",
+      "optionD": "Break",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is a homophone for 'see'?",
+      "optionA": "Sea",
+      "optionB": "Saw",
+      "optionC": "Sun",
+      "optionD": "Sky",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which sentence uses correct capitalization?",
+      "optionA": "i love pizza",
+      "optionB": "I love pizza",
+      "optionC": "i Love Pizza",
+      "optionD": "I love Pizza",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the superlative form of 'big'?",
+      "optionA": "Bigger",
+      "optionB": "Biggest",
+      "optionC": "Most big",
+      "optionD": "Very big",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word is an adjective?",
+      "optionA": "Quick",
+      "optionB": "Beautiful",
+      "optionC": "Table",
+      "optionD": "Quickly",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What does 'benevolent' mean?",
+      "optionA": "Kind and generous",
+      "optionB": "Cruel and mean",
+      "optionC": "Very smart",
+      "optionD": "Very fast",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which is a compound word?",
+      "optionA": "Sun",
+      "optionB": "Sunflower",
+      "optionC": "Run",
+      "optionD": "Blue",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the past participle of 'eat'?",
+      "optionA": "Ate",
+      "optionB": "Eaten",
+      "optionC": "Eating",
+      "optionD": "Eats",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word is an adverb?",
+      "optionA": "Quick",
+      "optionB": "Quickly",
+      "optionC": "Table",
+      "optionD": "Run",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is a synonym for 'begin'?",
+      "optionA": "End",
+      "optionB": "Start",
+      "optionC": "Stop",
+      "optionD": "Finish",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which sentence is a question?",
+      "optionA": "I like pizza.",
+      "optionB": "Do you like pizza?",
+      "optionC": "Pizza is good.",
+      "optionD": "Eat pizza now.",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is the plural of 'mouse'?",
+      "optionA": "Mouses",
+      "optionB": "Mice",
+      "optionC": "Mouse",
+      "optionD": "Mices",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "Which word means 'full of energy'?",
+      "optionA": "Tired",
+      "optionB": "Sleepy",
+      "optionC": "Energetic",
+      "optionD": "Lazy",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "English",
+      "question": "What is an idiom?",
+      "optionA": "A type of poem",
+      "optionB": "A figure of speech",
+      "optionC": "A grammar rule",
+      "optionD": "A punctuation mark",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 2 + 2?",
+      "optionA": "3",
+      "optionB": "4",
+      "optionC": "5",
+      "optionD": "6",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the square root of 16?",
+      "optionA": "2",
+      "optionB": "4",
+      "optionC": "8",
+      "optionD": "16",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 10 × 5?",
+      "optionA": "15",
+      "optionB": "50",
+      "optionC": "5",
+      "optionD": "100",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 100 ÷ 4?",
+      "optionA": "20",
+      "optionB": "25",
+      "optionC": "30",
+      "optionD": "35",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the value of π (pi) approximately?",
+      "optionA": "2.14",
+      "optionB": "3.14",
+      "optionC": "4.14",
+      "optionD": "5.14",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 15% of 200?",
+      "optionA": "20",
+      "optionB": "30",
+      "optionC": "25",
+      "optionD": "35",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the area of a circle with radius 7?",
+      "optionA": "154",
+      "optionB": "44",
+      "optionC": "22",
+      "optionD": "77",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 2³?",
+      "optionA": "6",
+      "optionB": "8",
+      "optionC": "9",
+      "optionD": "12",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the perimeter of a square with side 5?",
+      "optionA": "15",
+      "optionB": "20",
+      "optionC": "25",
+      "optionD": "30",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 7 × 8?",
+      "optionA": "54",
+      "optionB": "56",
+      "optionC": "58",
+      "optionD": "60",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the mean of 2, 4, 6, 8?",
+      "optionA": "4",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "7",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 144 ÷ 12?",
+      "optionA": "10",
+      "optionB": "12",
+      "optionC": "14",
+      "optionD": "16",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the volume of a cube with side 3?",
+      "optionA": "9",
+      "optionB": "18",
+      "optionC": "27",
+      "optionD": "36",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 25% of 80?",
+      "optionA": "15",
+      "optionB": "20",
+      "optionC": "25",
+      "optionD": "30",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the square of 9?",
+      "optionA": "18",
+      "optionB": "81",
+      "optionC": "27",
+      "optionD": "45",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 3 + 4 × 2?",
+      "optionA": "7",
+      "optionB": "11",
+      "optionC": "14",
+      "optionD": "10",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the circumference of a circle with radius 5?",
+      "optionA": "10π",
+      "optionB": "25π",
+      "optionC": "15π",
+      "optionD": "20π",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 100 - 37?",
+      "optionA": "63",
+      "optionB": "67",
+      "optionC": "73",
+      "optionD": "77",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the mode of 1, 2, 2, 3, 4?",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "3",
+      "optionD": "4",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is 5! (5 factorial)?",
+      "optionA": "25",
+      "optionB": "120",
+      "optionC": "50",
+      "optionD": "100",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Mathematics",
+      "question": "What is the sum of angles in a triangle?",
+      "optionA": "180°",
+      "optionB": "360°",
+      "optionC": "90°",
+      "optionD": "270°",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the speed of light?",
+      "optionA": "3 × 10^8 m/s",
+      "optionB": "3 × 10^6 m/s",
+      "optionC": "3 × 10^10 m/s",
+      "optionD": "3 × 10^4 m/s",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of force?",
+      "optionA": "Joule",
+      "optionB": "Newton",
+      "optionC": "Watt",
+      "optionD": "Volt",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the acceleration due to gravity on Earth?",
+      "optionA": "8.9 m/s²",
+      "optionB": "9.8 m/s²",
+      "optionC": "10.8 m/s²",
+      "optionD": "11.8 m/s²",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for kinetic energy?",
+      "optionA": "mgh",
+      "optionB": "½mv²",
+      "optionC": "mc²",
+      "optionD": "F×d",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the SI unit of electric current?",
+      "optionA": "Volt",
+      "optionB": "Ampere",
+      "optionC": "Ohm",
+      "optionD": "Watt",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of energy?",
+      "optionA": "Newton",
+      "optionB": "Joule",
+      "optionC": "Watt",
+      "optionD": "Volt",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for density?",
+      "optionA": "m/v",
+      "optionB": "m×v",
+      "optionC": "v/m",
+      "optionD": "m+v",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of frequency?",
+      "optionA": "Meter",
+      "optionB": "Second",
+      "optionC": "Hertz",
+      "optionD": "Newton",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for work done?",
+      "optionA": "F×d",
+      "optionB": "F/d",
+      "optionC": "m×v",
+      "optionD": "½mv²",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of power?",
+      "optionA": "Joule",
+      "optionB": "Watt",
+      "optionC": "Newton",
+      "optionD": "Volt",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for pressure?",
+      "optionA": "F×A",
+      "optionB": "F/A",
+      "optionC": "A/F",
+      "optionD": "F+A",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of charge?",
+      "optionA": "Volt",
+      "optionB": "Ampere",
+      "optionC": "Coulomb",
+      "optionD": "Ohm",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for Ohm's law?",
+      "optionA": "V=IR",
+      "optionB": "P=VI",
+      "optionC": "F=ma",
+      "optionD": "E=mc²",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of resistance?",
+      "optionA": "Volt",
+      "optionB": "Ampere",
+      "optionC": "Ohm",
+      "optionD": "Watt",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for gravitational potential energy?",
+      "optionA": "½mv²",
+      "optionB": "mgh",
+      "optionC": "F×d",
+      "optionD": "P×V",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of magnetic field strength?",
+      "optionA": "Tesla",
+      "optionB": "Gauss",
+      "optionC": "Weber",
+      "optionD": "Henry",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for wave speed?",
+      "optionA": "f×λ",
+      "optionB": "f/λ",
+      "optionC": "λ/f",
+      "optionD": "f+λ",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the unit of capacitance?",
+      "optionA": "Volt",
+      "optionB": "Farad",
+      "optionC": "Henry",
+      "optionD": "Siemens",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Physics",
+      "question": "What is the formula for efficiency?",
+      "optionA": "Output/Input",
+      "optionB": "Input/Output",
+      "optionC": "Output×Input",
+      "optionD": "Input-Output",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical symbol for water?",
+      "optionA": "H2",
+      "optionB": "O2",
+      "optionC": "H2O",
+      "optionD": "CO2",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the atomic number of carbon?",
+      "optionA": "4",
+      "optionB": "6",
+      "optionC": "8",
+      "optionD": "12",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the pH of pure water?",
+      "optionA": "0",
+      "optionB": "7",
+      "optionC": "10",
+      "optionD": "14",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical formula for table salt?",
+      "optionA": "HCl",
+      "optionB": "NaCl",
+      "optionC": "KCl",
+      "optionD": "CaCl2",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the molecular weight of oxygen gas (O2)?",
+      "optionA": "16",
+      "optionB": "32",
+      "optionC": "48",
+      "optionD": "64",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical symbol for gold?",
+      "optionA": "Go",
+      "optionB": "Gd",
+      "optionC": "Au",
+      "optionD": "Ag",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the valency of sodium?",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "3",
+      "optionD": "4",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical formula for sulfuric acid?",
+      "optionA": "HCl",
+      "optionB": "H2SO4",
+      "optionC": "HNO3",
+      "optionD": "H3PO4",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the atomic mass of hydrogen?",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "3",
+      "optionD": "4",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical formula for methane?",
+      "optionA": "CH3",
+      "optionB": "CH4",
+      "optionC": "C2H6",
+      "optionD": "C3H8",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the pH of a neutral solution?",
+      "optionA": "0",
+      "optionB": "7",
+      "optionC": "10",
+      "optionD": "14",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical symbol for iron?",
+      "optionA": "Ir",
+      "optionB": "Fe",
+      "optionC": "In",
+      "optionD": "Io",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the molecular formula for glucose?",
+      "optionA": "C5H10O5",
+      "optionB": "C6H12O6",
+      "optionC": "C7H14O7",
+      "optionD": "C8H16O8",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the valency of oxygen?",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "3",
+      "optionD": "4",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical formula for carbon dioxide?",
+      "optionA": "CO",
+      "optionB": "CO2",
+      "optionC": "C2O",
+      "optionD": "C2O2",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the atomic number of oxygen?",
+      "optionA": "6",
+      "optionB": "7",
+      "optionC": "8",
+      "optionD": "9",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical formula for ammonia?",
+      "optionA": "NH2",
+      "optionB": "NH3",
+      "optionC": "NH4",
+      "optionD": "N2H4",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the pH of an acidic solution?",
+      "optionA": "Above 7",
+      "optionB": "Below 7",
+      "optionC": "Equal to 7",
+      "optionD": "Equal to 14",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the chemical symbol for potassium?",
+      "optionA": "Po",
+      "optionB": "Pt",
+      "optionC": "K",
+      "optionD": "Ka",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Chemistry",
+      "question": "What is the molecular weight of water?",
+      "optionA": "16",
+      "optionB": "18",
+      "optionC": "20",
+      "optionD": "22",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the powerhouse of the cell?",
+      "optionA": "Nucleus",
+      "optionB": "Mitochondria",
+      "optionC": "Ribosome",
+      "optionD": "Golgi apparatus",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the basic unit of life?",
+      "optionA": "Atom",
+      "optionB": "Molecule",
+      "optionC": "Cell",
+      "optionD": "Tissue",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What carries oxygen in the blood?",
+      "optionA": "White blood cells",
+      "optionB": "Platelets",
+      "optionC": "Red blood cells",
+      "optionD": "Plasma",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process by which plants make food?",
+      "optionA": "Respiration",
+      "optionB": "Photosynthesis",
+      "optionC": "Transpiration",
+      "optionD": "Digestion",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the genetic material in cells?",
+      "optionA": "Protein",
+      "optionB": "Carbohydrate",
+      "optionC": "DNA",
+      "optionD": "Lipid",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process of cell division in somatic cells?",
+      "optionA": "Meiosis",
+      "optionB": "Mitosis",
+      "optionC": "Binary fission",
+      "optionD": "Budding",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the largest organ in the human body?",
+      "optionA": "Heart",
+      "optionB": "Liver",
+      "optionC": "Skin",
+      "optionD": "Brain",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the function of the ribosome?",
+      "optionA": "Energy production",
+      "optionB": "Protein synthesis",
+      "optionC": "Waste removal",
+      "optionD": "Cell division",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process by which organisms maintain internal stability?",
+      "optionA": "Evolution",
+      "optionB": "Homeostasis",
+      "optionC": "Metabolism",
+      "optionD": "Reproduction",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the basic unit of heredity?",
+      "optionA": "Chromosome",
+      "optionB": "Gene",
+      "optionC": "DNA",
+      "optionD": "Cell",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the green pigment in plants called?",
+      "optionA": "Carotene",
+      "optionB": "Chlorophyll",
+      "optionC": "Xanthophyll",
+      "optionD": "Anthocyanin",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the study of plants called?",
+      "optionA": "Zoology",
+      "optionB": "Botany",
+      "optionC": "Ecology",
+      "optionD": "Microbiology",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process of converting glucose to energy?",
+      "optionA": "Photosynthesis",
+      "optionB": "Respiration",
+      "optionC": "Transpiration",
+      "optionD": "Osmosis",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the control center of the cell?",
+      "optionA": "Mitochondria",
+      "optionB": "Nucleus",
+      "optionC": "Ribosome",
+      "optionD": "Vacuole",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process by which water moves through a plant?",
+      "optionA": "Photosynthesis",
+      "optionB": "Transpiration",
+      "optionC": "Respiration",
+      "optionD": "Digestion",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the study of animals called?",
+      "optionA": "Botany",
+      "optionB": "Zoology",
+      "optionC": "Ecology",
+      "optionD": "Microbiology",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the process of cell division that produces gametes?",
+      "optionA": "Mitosis",
+      "optionB": "Meiosis",
+      "optionC": "Binary fission",
+      "optionD": "Budding",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the largest bone in the human body?",
+      "optionA": "Femur",
+      "optionB": "Tibia",
+      "optionC": "Humerus",
+      "optionD": "Fibula",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Biology",
+      "question": "What is the function of the heart?",
+      "optionA": "Thinking",
+      "optionB": "Pumping blood",
+      "optionC": "Digesting food",
+      "optionD": "Breathing",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the study of how individuals and societies allocate scarce resources?",
+      "optionA": "Psychology",
+      "optionB": "Sociology",
+      "optionC": "Economics",
+      "optionD": "Political Science",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the total value of goods and services produced within a country in a year?",
+      "optionA": "GDP",
+      "optionB": "GNP",
+      "optionC": "CPI",
+      "optionD": "PPI",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the law of demand?",
+      "optionA": "As price increases, quantity demanded increases",
+      "optionB": "As price increases, quantity demanded decreases",
+      "optionC": "As price decreases, quantity supplied increases",
+      "optionD": "As price increases, quantity supplied decreases",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is inflation?",
+      "optionA": "Increase in unemployment",
+      "optionB": "Increase in general price level",
+      "optionC": "Decrease in money supply",
+      "optionD": "Increase in interest rates",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is money received by workers for their labor?",
+      "optionA": "Profit",
+      "optionB": "Interest",
+      "optionC": "Rent",
+      "optionD": "Wages",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the money value of all final goods and services produced?",
+      "optionA": "National Income",
+      "optionB": "Gross Domestic Product",
+      "optionC": "Per Capita Income",
+      "optionD": "Disposable Income",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the law of supply?",
+      "optionA": "As price increases, quantity supplied increases",
+      "optionB": "As price increases, quantity supplied decreases",
+      "optionC": "As price decreases, quantity demanded increases",
+      "optionD": "As price increases, quantity demanded decreases",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the total amount of money in circulation?",
+      "optionA": "Money Supply",
+      "optionB": "Money Demand",
+      "optionC": "Credit Creation",
+      "optionD": "Bank Rate",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the cost of borrowing money?",
+      "optionA": "Profit",
+      "optionB": "Interest",
+      "optionC": "Rent",
+      "optionD": "Wages",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the money paid for the use of land?",
+      "optionA": "Profit",
+      "optionB": "Interest",
+      "optionC": "Rent",
+      "optionD": "Wages",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the reward of enterprise?",
+      "optionA": "Profit",
+      "optionB": "Interest",
+      "optionC": "Rent",
+      "optionD": "Wages",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the total expenditure on goods and services?",
+      "optionA": "Consumption",
+      "optionB": "Investment",
+      "optionC": "Aggregate Demand",
+      "optionD": "Aggregate Supply",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the total output of goods and services?",
+      "optionA": "Consumption",
+      "optionB": "Investment",
+      "optionC": "Aggregate Demand",
+      "optionD": "Aggregate Supply",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the money income of households and private corporations?",
+      "optionA": "National Income",
+      "optionB": "Personal Income",
+      "optionC": "Disposable Income",
+      "optionD": "Real Income",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the income left after paying direct taxes?",
+      "optionA": "National Income",
+      "optionB": "Personal Income",
+      "optionC": "Disposable Income",
+      "optionD": "Real Income",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Economics",
+      "question": "What is the term for the income adjusted for price changes?",
+      "optionA": "National Income",
+      "optionB": "Personal Income",
+      "optionC": "Disposable Income",
+      "optionD": "Real Income",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the supreme law of Nigeria?",
+      "optionA": "Constitution",
+      "optionB": "Parliament Act",
+      "optionC": "Presidential Decree",
+      "optionD": "Military Law",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the head of the executive branch in Nigeria?",
+      "optionA": "Chief Justice",
+      "optionB": "President",
+      "optionC": "Senate President",
+      "optionD": "Speaker of the House",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian legislature called?",
+      "optionA": "Parliament",
+      "optionB": "Congress",
+      "optionC": "National Assembly",
+      "optionD": "Federal Council",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the capital of Nigeria?",
+      "optionA": "Lagos",
+      "optionB": "Abuja",
+      "optionC": "Kano",
+      "optionD": "Ibadan",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the highest court in Nigeria?",
+      "optionA": "Court of Appeal",
+      "optionB": "High Court",
+      "optionC": "Supreme Court",
+      "optionD": "Federal Court",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the number of states in Nigeria?",
+      "optionA": "30",
+      "optionB": "36",
+      "optionC": "40",
+      "optionD": "50",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian currency called?",
+      "optionA": "Dollar",
+      "optionB": "Euro",
+      "optionC": "Naira",
+      "optionD": "Pound",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the head of the judiciary in Nigeria?",
+      "optionA": "Attorney General",
+      "optionB": "Chief Justice",
+      "optionC": "Minister of Justice",
+      "optionD": "Solicitor General",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian parliament called?",
+      "optionA": "House of Commons",
+      "optionB": "House of Representatives",
+      "optionC": "Senate",
+      "optionD": "National Assembly",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the term of office for the Nigerian President?",
+      "optionA": "4 years",
+      "optionB": "5 years",
+      "optionC": "6 years",
+      "optionD": "7 years",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian electoral body called?",
+      "optionA": "INEC",
+      "optionB": "NPC",
+      "optionC": "NCC",
+      "optionD": "NBC",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian police force called?",
+      "optionA": "Federal Police",
+      "optionB": "National Police",
+      "optionC": "Nigeria Police Force",
+      "optionD": "State Police",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian intelligence agency called?",
+      "optionA": "CIA",
+      "optionB": "MI6",
+      "optionC": "DSS",
+      "optionD": "FBI",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian anti-corruption agency called?",
+      "optionA": "EFCC",
+      "optionB": "ICPC",
+      "optionC": "NDLEA",
+      "optionD": "NIA",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian drug enforcement agency called?",
+      "optionA": "EFCC",
+      "optionB": "ICPC",
+      "optionC": "NDLEA",
+      "optionD": "NIA",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian immigration service called?",
+      "optionA": "NIS",
+      "optionB": "NCS",
+      "optionC": "FRSC",
+      "optionD": "NSCDC",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian road safety corps called?",
+      "optionA": "NIS",
+      "optionB": "NCS",
+      "optionC": "FRSC",
+      "optionD": "NSCDC",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Government",
+      "question": "What is the Nigerian civil defense corps called?",
+      "optionA": "NIS",
+      "optionB": "NCS",
+      "optionC": "FRSC",
+      "optionD": "NSCDC",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "Who wrote 'Things Fall Apart'?",
+      "optionA": "Wole Soyinka",
+      "optionB": "Chinua Achebe",
+      "optionC": "Chimamanda Ngozi Adichie",
+      "optionD": "Ben Okri",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a play on words?",
+      "optionA": "Metaphor",
+      "optionB": "Pun",
+      "optionC": "Simile",
+      "optionD": "Alliteration",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the main character in a story called?",
+      "optionA": "Antagonist",
+      "optionB": "Protagonist",
+      "optionC": "Narrator",
+      "optionD": "Author",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is a poem with 14 lines called?",
+      "optionA": "Haiku",
+      "optionB": "Sonnet",
+      "optionC": "Ode",
+      "optionD": "Ballad",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the sequence of events in a story called?",
+      "optionA": "Setting",
+      "optionB": "Plot",
+      "optionC": "Theme",
+      "optionD": "Character",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the author's attitude toward the subject?",
+      "optionA": "Tone",
+      "optionB": "Mood",
+      "optionC": "Theme",
+      "optionD": "Setting",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the atmosphere of a story?",
+      "optionA": "Tone",
+      "optionB": "Mood",
+      "optionC": "Theme",
+      "optionD": "Setting",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the central message of a story?",
+      "optionA": "Tone",
+      "optionB": "Mood",
+      "optionC": "Theme",
+      "optionD": "Setting",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the time and place of a story?",
+      "optionA": "Tone",
+      "optionB": "Mood",
+      "optionC": "Theme",
+      "optionD": "Setting",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a character who opposes the protagonist?",
+      "optionA": "Antagonist",
+      "optionB": "Protagonist",
+      "optionC": "Narrator",
+      "optionD": "Author",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a story told by a narrator outside the story?",
+      "optionA": "First person",
+      "optionB": "Second person",
+      "optionC": "Third person limited",
+      "optionD": "Third person omniscient",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a story told by the protagonist?",
+      "optionA": "First person",
+      "optionB": "Second person",
+      "optionC": "Third person limited",
+      "optionD": "Third person omniscient",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a comparison using 'like' or 'as'?",
+      "optionA": "Metaphor",
+      "optionB": "Pun",
+      "optionC": "Simile",
+      "optionD": "Alliteration",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for repetition of initial consonant sounds?",
+      "optionA": "Metaphor",
+      "optionB": "Pun",
+      "optionC": "Simile",
+      "optionD": "Alliteration",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for a direct comparison without 'like' or 'as'?",
+      "optionA": "Metaphor",
+      "optionB": "Pun",
+      "optionC": "Simile",
+      "optionD": "Alliteration",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the turning point in a story?",
+      "optionA": "Climax",
+      "optionB": "Resolution",
+      "optionC": "Exposition",
+      "optionD": "Falling action",
+      "correctAnswer": "A",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the beginning of a story?",
+      "optionA": "Climax",
+      "optionB": "Resolution",
+      "optionC": "Exposition",
+      "optionD": "Falling action",
+      "correctAnswer": "C",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the end of a story?",
+      "optionA": "Climax",
+      "optionB": "Resolution",
+      "optionC": "Exposition",
+      "optionD": "Falling action",
+      "correctAnswer": "B",
+      "year": 2023
+    },
+    {
+      "subject": "Literature",
+      "question": "What is the term for the events after the climax?",
+      "optionA": "Climax",
+      "optionB": "Resolution",
+      "optionC": "Exposition",
+      "optionD": "Falling action",
+      "correctAnswer": "D",
+      "year": 2023
+    },
+    {
+      "_id": "question_1775208410690",
+      "subject": "STAT 112",
+      "question": "The mean of the numbers 2, 4, 6, 8 is:",
+      "optionA": "4",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "8",
+      "correctAnswer": "B",
+      "year": "2026"
+    },
+    {
+      "_id": "question_1775208503923",
+      "subject": "STAT 112",
+      "question": "Find the median of: 3, 7, 9, 11, 15",
+      "optionA": "7",
+      "optionB": "9",
+      "optionC": "10",
+      "optionD": "11",
+      "correctAnswer": "B",
+      "year": "2026"
+    },
+    {
+      "_id": "question_1775253673955",
+      "subject": "STAT 122",
+      "question": "A dataset has the following values:  2, 4, 6, 8, 10, What is the mean of the dataset?",
+      "optionA": "5",
+      "optionB": "6",
+      "optionC": "7",
+      "optionD": "8",
+      "correctAnswer": "B",
+      "year": "2025"
+    },
+    {
+      "_id": "question_1776812505061",
+      "subject": "STAT 112",
+      "question": "The mode is the:",
+      "optionA": "Middle value",
+      "optionB": "Average value",
+      "optionC": "Most frequent value",
+      "optionD": "Largest value",
+      "correctAnswer": "C",
+      "year": "2022"
+    }
+  ]
+}

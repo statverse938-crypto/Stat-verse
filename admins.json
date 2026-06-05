@@ -1,0 +1,9 @@
+{
+  "admins": [
+    {
+      "id": "admin-001",
+      "email": "admin@statscbt.com",
+      "password": "$2a$10$fyhuaBXmQw5P21UMnfbOcuW.56ehdUQ3wC6nj.Uo6C7LK5nWXJvRS"
+    }
+  ]
+}

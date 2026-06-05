@@ -1,0 +1,1588 @@
+{
+  "users": [
+    {
+      "_id": "user_1773538681781",
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "$2a$10$IVRQhJDNNpffIBcWvIO7.eiZjWHrdbeV66L2dS8k2tsLcUiQT/ViG",
+      "activationPin": "O2JQ48TS",
+      "examYear": "2024",
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Physics",
+        "Chemistry"
+      ],
+      "createdAt": "2026-03-15T01:38:01.781Z"
+    },
+    {
+      "_id": "user_1773538754427",
+      "name": "Leo's Team",
+      "email": "lawrenceleo579@gmail.com",
+      "password": "$2a$10$2UpCqQI73klGQzsAuWPlL.WMOOQyxwOijKBE265D/cNt5xXt6cZTW",
+      "activationPin": "SZZDC6LP",
+      "examYear": "2024",
+      "subjects": [
+        "English",
+        "Physics",
+        "Biology",
+        "Government"
+      ],
+      "createdAt": "2026-03-15T01:39:14.427Z"
+    },
+    {
+      "_id": "user_1773539757967",
+      "name": "Ker ate",
+      "email": "estatewebsite992@gmail.com",
+      "password": "$2a$10$lO2omtJd0RyDp0qj6IV8j.1cWwChxweeRqbnPdyYGyfgoKxO/13N.",
+      "activationPin": "NCPNT02H",
+      "examYear": "2024",
+      "subjects": [
+        "Physics",
+        "Government",
+        "Biology",
+        "Literature"
+      ],
+      "createdAt": "2026-03-15T01:55:57.967Z"
+    },
+    {
+      "_id": "user_1773540306121",
+      "name": "Leo",
+      "email": "premiumjambcbt@gmail.com",
+      "password": "$2a$10$so4PFtMC8tywodOEzdWNz.lR2lpIuvKFD1n1ABkMmOfnT3IE3tQUm",
+      "activationPin": "8GRH4AOA",
+      "examYear": "2024",
+      "subjects": [
+        "Physics",
+        "Biology",
+        "Government",
+        "Economics"
+      ],
+      "createdAt": "2026-03-15T02:05:06.121Z"
+    },
+    {
+      "_id": "user_1773540600564",
+      "name": "EMEKA",
+      "email": "nestorriawebsite@gmail.com",
+      "password": "$2a$10$kJlyctVAe/CI0y4rAKCZZevDPu1Y1pljQCVK7oYDxsLgN1JahXDRy",
+      "activationPin": "NU8TRC41",
+      "examYear": "2025",
+      "subjects": [
+        "Mathematics",
+        "English",
+        "Physics",
+        "Government"
+      ],
+      "createdAt": "2026-03-15T02:10:00.564Z"
+    },
+    {
+      "_id": "user_1773540757099",
+      "name": "Vera",
+      "email": "vera@gmail.com",
+      "password": "$2a$10$jMazoVl/7ckpcmA/M9cFBOCUQdho.s42pkF9Ia87DriQudYSNUh2C",
+      "activationPin": "DH1ZKXKB",
+      "examYear": "2023",
+      "subjects": [
+        "Mathematics",
+        "Chemistry",
+        "Biology",
+        "Physics"
+      ],
+      "createdAt": "2026-03-15T02:12:37.099Z"
+    },
+    {
+      "_id": "user_1773559374810",
+      "name": "Leo's Team",
+      "email": "miracle1234@gmail.com",
+      "password": "$2a$10$tIsPictoDY1poHb2cQ6rgOilTzPGQdDDX69a5as7jpSE.sscPCITm",
+      "activationPin": "8571P7VC",
+      "examYear": "2021",
+      "subjects": [
+        "English",
+        "Physics",
+        "Biology",
+        "Chemistry"
+      ],
+      "createdAt": "2026-03-15T07:22:54.810Z"
+    },
+    {
+      "_id": "user_1773560944294",
+      "name": "CHRONUICLEW",
+      "email": "atomic123@gmail.com",
+      "password": "$2a$10$.ati5i7iHnHF9sCcWFcsRuOTd9nnKywczY/Hl3Gh0lBmnbEKH31OO",
+      "activationPin": "JQX9QNBP",
+      "examYear": 2026,
+      "subjects": [],
+      "createdAt": "2026-03-15T07:49:04.294Z"
+    },
+    {
+      "_id": "user_1773561511910",
+      "name": "Emma",
+      "email": "miracle12@gmail.com",
+      "password": "$2a$10$cRrk6wJ6Rf3wP4KaNhGtLOCXWwEN.M7ePlEA7pDbLXnK9YnI1fa9S",
+      "activationPin": "R1I6JZU4",
+      "examYear": 2026,
+      "subjects": [
+        "Biology",
+        "Government",
+        "Chemistry",
+        "Economics"
+      ],
+      "createdAt": "2026-03-15T07:58:31.910Z",
+      "scoreHistory": [
+        {
+          "subject": "Chemistry",
+          "score": 0,
+          "totalQuestions": 20,
+          "date": "2026-03-15T08:02:39.765Z"
+        },
+        {
+          "subject": "Economics",
+          "score": 0,
+          "totalQuestions": 16,
+          "date": "2026-03-15T08:03:36.193Z"
+        },
+        {
+          "subject": "Biology",
+          "score": 0,
+          "totalQuestions": 19,
+          "date": "2026-03-15T08:08:45.523Z"
+        },
+        {
+          "subject": "Chemistry",
+          "score": 5,
+          "totalQuestions": 20,
+          "date": "2026-03-15T08:09:25.169Z"
+        },
+        {
+          "subject": "Chemistry",
+          "score": 5,
+          "totalQuestions": 20,
+          "date": "2026-03-15T08:18:58.640Z",
+          "examDetails": [
+            {
+              "question": "What is the chemical symbol for water?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the atomic number of carbon?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the pH of pure water?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical formula for table salt?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the molecular weight of oxygen gas (O2)?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical symbol for gold?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the valency of sodium?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical formula for sulfuric acid?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the atomic mass of hydrogen?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical formula for methane?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the pH of a neutral solution?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical symbol for iron?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the molecular formula for glucose?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the valency of oxygen?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical formula for carbon dioxide?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the atomic number of oxygen?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical formula for ammonia?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the pH of an acidic solution?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the chemical symbol for potassium?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the molecular weight of water?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1775153698723",
+      "name": "Vicoka",
+      "email": "satomic123@gmaiil.com",
+      "password": "$2a$10$PvGyl2hbpxlEwK5EPpueBuTGspMRs.jqt7TNbjYiTpF8kJWy5yHxq",
+      "activationPin": "VAXN5FAR",
+      "examYear": 2026,
+      "subjects": [
+        "Chemistry",
+        "Economics",
+        "Government",
+        "Physics"
+      ],
+      "createdAt": "2026-04-02T18:14:58.723Z",
+      "scoreHistory": [
+        {
+          "subject": "Government",
+          "score": 5.555555555555555,
+          "totalQuestions": 18,
+          "date": "2026-04-02T18:15:50.945Z",
+          "examDetails": [
+            {
+              "question": "What is the supreme law of Nigeria?",
+              "correctAnswer": "A",
+              "userAnswer": "A",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the head of the executive branch in Nigeria?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian legislature called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the capital of Nigeria?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the highest court in Nigeria?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the number of states in Nigeria?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian currency called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the head of the judiciary in Nigeria?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian parliament called?",
+              "correctAnswer": "D",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term of office for the Nigerian President?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian electoral body called?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian police force called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian intelligence agency called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian anti-corruption agency called?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian drug enforcement agency called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian immigration service called?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian road safety corps called?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian civil defense corps called?",
+              "correctAnswer": "D",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "subject": "Economics",
+          "score": 31.25,
+          "totalQuestions": 16,
+          "date": "2026-04-02T18:22:49.717Z",
+          "examDetails": [
+            {
+              "question": "What is the study of how individuals and societies allocate scarce resources?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the total value of goods and services produced within a country in a year?",
+              "correctAnswer": "A",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the law of demand?",
+              "correctAnswer": "B",
+              "userAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is inflation?",
+              "correctAnswer": "B",
+              "userAnswer": "D",
+              "isCorrect": false
+            },
+            {
+              "question": "What is money received by workers for their labor?",
+              "correctAnswer": "D",
+              "userAnswer": "D",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the term for the money value of all final goods and services produced?",
+              "correctAnswer": "B",
+              "userAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the law of supply?",
+              "correctAnswer": "A",
+              "userAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the total amount of money in circulation?",
+              "correctAnswer": "A",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the cost of borrowing money?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the term for the money paid for the use of land?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the term for the reward of enterprise?",
+              "correctAnswer": "A",
+              "userAnswer": "D",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the total expenditure on goods and services?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the term for the total output of goods and services?",
+              "correctAnswer": "D",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the money income of households and private corporations?",
+              "correctAnswer": "B",
+              "userAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the income left after paying direct taxes?",
+              "correctAnswer": "C",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term for the income adjusted for price changes?",
+              "correctAnswer": "D",
+              "userAnswer": "B",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1775154482989",
+      "name": "Adanne Obinwa",
+      "email": "admin@forever.com",
+      "password": "$2a$10$hUY01coXFJMPNVo2Zr5/GObg2pDFqheG8A4C75wSSEbCYBgPHyN8S",
+      "activationPin": "8BKNSQAW",
+      "examYear": 2026,
+      "subjects": [
+        "Biology",
+        "Physics",
+        "English",
+        "Government"
+      ],
+      "createdAt": "2026-04-02T18:28:02.989Z",
+      "scoreHistory": [
+        {
+          "subject": "Physics",
+          "score": 73.68421052631578,
+          "totalQuestions": 19,
+          "date": "2026-04-02T18:30:04.394Z",
+          "examDetails": [
+            {
+              "question": "What is the speed of light?",
+              "correctAnswer": "A",
+              "userAnswer": "A",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of force?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the acceleration due to gravity on Earth?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the formula for kinetic energy?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the SI unit of electric current?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of energy?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the formula for density?",
+              "correctAnswer": "A",
+              "userAnswer": "A",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of frequency?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the formula for work done?",
+              "correctAnswer": "A",
+              "userAnswer": "A",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of power?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the formula for pressure?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of charge?",
+              "correctAnswer": "C",
+              "userAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the formula for Ohm's law?",
+              "correctAnswer": "A",
+              "userAnswer": "A",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of resistance?",
+              "correctAnswer": "C",
+              "userAnswer": "C",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the formula for gravitational potential energy?",
+              "correctAnswer": "B",
+              "userAnswer": "B",
+              "isCorrect": true
+            },
+            {
+              "question": "What is the unit of magnetic field strength?",
+              "correctAnswer": "A",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the formula for wave speed?",
+              "correctAnswer": "A",
+              "userAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the unit of capacitance?",
+              "correctAnswer": "B",
+              "userAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the formula for efficiency?",
+              "correctAnswer": "A",
+              "userAnswer": "B",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "subject": "English",
+          "score": 0,
+          "totalQuestions": 25,
+          "date": "2026-04-02T18:35:18.368Z",
+          "examDetails": [
+            {
+              "question": "What is the capital of France?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which of these is a synonym for 'happy'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the past tense of 'go'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is a noun?",
+              "correctAnswer": "D",
+              "isCorrect": false
+            },
+            {
+              "question": "What does 'ubiquitous' mean?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence is grammatically correct?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is an antonym for 'brave'?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is a verb?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the plural of 'child'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which punctuation mark ends a question?",
+              "correctAnswer": "D",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the comparative form of 'good'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word means 'to make better'?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "What is a homophone for 'see'?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence uses correct capitalization?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the superlative form of 'big'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is an adjective?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What does 'benevolent' mean?",
+              "correctAnswer": "A",
+              "isCorrect": false
+            },
+            {
+              "question": "Which is a compound word?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the past participle of 'eat'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is an adverb?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is a synonym for 'begin'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence is a question?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "What is the plural of 'mouse'?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            },
+            {
+              "question": "Which word means 'full of energy'?",
+              "correctAnswer": "C",
+              "isCorrect": false
+            },
+            {
+              "question": "What is an idiom?",
+              "correctAnswer": "B",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "subject": "Government",
+          "score": 0,
+          "totalQuestions": 18,
+          "date": "2026-04-02T18:37:18.095Z",
+          "examDetails": [
+            {
+              "question": "What is the supreme law of Nigeria?",
+              "options": [
+                "Constitution",
+                "Parliament Act",
+                "Presidential Decree",
+                "Military Law"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": 2,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the head of the executive branch in Nigeria?",
+              "options": [
+                "Chief Justice",
+                "President",
+                "Senate President",
+                "Speaker of the House"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian legislature called?",
+              "options": [
+                "Parliament",
+                "Congress",
+                "National Assembly",
+                "Federal Council"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the capital of Nigeria?",
+              "options": [
+                "Lagos",
+                "Abuja",
+                "Kano",
+                "Ibadan"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the highest court in Nigeria?",
+              "options": [
+                "Court of Appeal",
+                "High Court",
+                "Supreme Court",
+                "Federal Court"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the number of states in Nigeria?",
+              "options": [
+                "30",
+                "36",
+                "40",
+                "50"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian currency called?",
+              "options": [
+                "Dollar",
+                "Euro",
+                "Naira",
+                "Pound"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the head of the judiciary in Nigeria?",
+              "options": [
+                "Attorney General",
+                "Chief Justice",
+                "Minister of Justice",
+                "Solicitor General"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian parliament called?",
+              "options": [
+                "House of Commons",
+                "House of Representatives",
+                "Senate",
+                "National Assembly"
+              ],
+              "correctAnswer": 3,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the term of office for the Nigerian President?",
+              "options": [
+                "4 years",
+                "5 years",
+                "6 years",
+                "7 years"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian electoral body called?",
+              "options": [
+                "INEC",
+                "NPC",
+                "NCC",
+                "NBC"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian police force called?",
+              "options": [
+                "Federal Police",
+                "National Police",
+                "Nigeria Police Force",
+                "State Police"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian intelligence agency called?",
+              "options": [
+                "CIA",
+                "MI6",
+                "DSS",
+                "FBI"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian anti-corruption agency called?",
+              "options": [
+                "EFCC",
+                "ICPC",
+                "NDLEA",
+                "NIA"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian drug enforcement agency called?",
+              "options": [
+                "EFCC",
+                "ICPC",
+                "NDLEA",
+                "NIA"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian immigration service called?",
+              "options": [
+                "NIS",
+                "NCS",
+                "FRSC",
+                "NSCDC"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian road safety corps called?",
+              "options": [
+                "NIS",
+                "NCS",
+                "FRSC",
+                "NSCDC"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the Nigerian civil defense corps called?",
+              "options": [
+                "NIS",
+                "NCS",
+                "FRSC",
+                "NSCDC"
+              ],
+              "correctAnswer": 3,
+              "userAnswer": null,
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "subject": "English",
+          "score": 4,
+          "totalQuestions": 25,
+          "date": "2026-04-02T18:40:38.567Z",
+          "examDetails": [
+            {
+              "question": "What is the capital of France?",
+              "options": [
+                "Madrid",
+                "Paris",
+                "Rome",
+                "London"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Which of these is a synonym for 'happy'?",
+              "options": [
+                "Sad",
+                "Joyful",
+                "Angry",
+                "Tired"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the past tense of 'go'?",
+              "options": [
+                "Going",
+                "Went",
+                "Gone",
+                "Goes"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is a noun?",
+              "options": [
+                "Run",
+                "Quickly",
+                "Beautiful",
+                "Table"
+              ],
+              "correctAnswer": 3,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What does 'ubiquitous' mean?",
+              "options": [
+                "Rare",
+                "Present everywhere",
+                "Very small",
+                "Very large"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence is grammatically correct?",
+              "options": [
+                "She don't like apples",
+                "She doesn't likes apples",
+                "She doesn't like apples",
+                "She don't likes apples"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is an antonym for 'brave'?",
+              "options": [
+                "Cowardly",
+                "Strong",
+                "Smart",
+                "Fast"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is a verb?",
+              "options": [
+                "Happiness",
+                "Quick",
+                "Run",
+                "Blue"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the plural of 'child'?",
+              "options": [
+                "Childs",
+                "Children",
+                "Childes",
+                "Childrens"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which punctuation mark ends a question?",
+              "options": [
+                ".",
+                ",",
+                "!",
+                "?"
+              ],
+              "correctAnswer": 3,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the comparative form of 'good'?",
+              "options": [
+                "Gooder",
+                "Better",
+                "Best",
+                "Goodest"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word means 'to make better'?",
+              "options": [
+                "Improve",
+                "Worsen",
+                "Destroy",
+                "Break"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is a homophone for 'see'?",
+              "options": [
+                "Sea",
+                "Saw",
+                "Sun",
+                "Sky"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence uses correct capitalization?",
+              "options": [
+                "i love pizza",
+                "I love pizza",
+                "i Love Pizza",
+                "I love Pizza"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the superlative form of 'big'?",
+              "options": [
+                "Bigger",
+                "Biggest",
+                "Most big",
+                "Very big"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is an adjective?",
+              "options": [
+                "Quick",
+                "Beautiful",
+                "Table",
+                "Quickly"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What does 'benevolent' mean?",
+              "options": [
+                "Kind and generous",
+                "Cruel and mean",
+                "Very smart",
+                "Very fast"
+              ],
+              "correctAnswer": 0,
+              "userAnswer": 2,
+              "isCorrect": false
+            },
+            {
+              "question": "Which is a compound word?",
+              "options": [
+                "Sun",
+                "Sunflower",
+                "Run",
+                "Blue"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the past participle of 'eat'?",
+              "options": [
+                "Ate",
+                "Eaten",
+                "Eating",
+                "Eats"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word is an adverb?",
+              "options": [
+                "Quick",
+                "Quickly",
+                "Table",
+                "Run"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is a synonym for 'begin'?",
+              "options": [
+                "End",
+                "Start",
+                "Stop",
+                "Finish"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which sentence is a question?",
+              "options": [
+                "I like pizza.",
+                "Do you like pizza?",
+                "Pizza is good.",
+                "Eat pizza now."
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is the plural of 'mouse'?",
+              "options": [
+                "Mouses",
+                "Mice",
+                "Mouse",
+                "Mices"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Which word means 'full of energy'?",
+              "options": [
+                "Tired",
+                "Sleepy",
+                "Energetic",
+                "Lazy"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "What is an idiom?",
+              "options": [
+                "A type of poem",
+                "A figure of speech",
+                "A grammar rule",
+                "A punctuation mark"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1775206129225",
+      "name": "Jerry",
+      "email": "jerry@gmail.com",
+      "password": "$2a$10$9kGeYTpZcGygntEI3951HOrNluqBNkGOPBwmqEEiwqGW3PkpGIAgy",
+      "activationPin": "I94Y257U",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "createdAt": "2026-04-03T08:48:49.225Z",
+      "scoreHistory": [
+        {
+          "subject": "STAT 112",
+          "score": 100,
+          "totalQuestions": 2,
+          "date": "2026-04-03T09:30:01.034Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "subject": "STAT 112",
+          "score": 100,
+          "totalQuestions": 2,
+          "date": "2026-04-03T11:18:59.194Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "subject": "STAT 112",
+          "score": 100,
+          "totalQuestions": 2,
+          "date": "2026-04-03T11:20:28.508Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "subject": "STAT 122",
+          "score": 100,
+          "totalQuestions": 1,
+          "date": "2026-04-03T22:01:50.483Z",
+          "examDetails": [
+            {
+              "question": "A dataset has the following values:  2, 4, 6, 8, 10, What is the mean of the dataset?",
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1775259795629",
+      "name": "KC STREET",
+      "email": "kc123@gmail.com",
+      "password": "$2a$10$vGrYp7bWadTlkxbaLlx8SeXbHjgOnzvhI3aMH615IrCZbaDyqaBoG",
+      "activationPin": "6V2MIQBC",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "createdAt": "2026-04-03T23:43:15.629Z"
+    },
+    {
+      "_id": "user_1776812224232",
+      "name": "Sharon Ifeanyi",
+      "email": "sharonifeanyi123@gmail.com",
+      "password": "$2a$10$t3.jgoXtQ4P2nIr8iILeJOdF/ylfihd3baZDg1mvN57cQkMAuT.eC",
+      "activationPin": "Q2B1MLYF",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "createdAt": "2026-04-21T22:57:04.232Z",
+      "scoreHistory": [
+        {
+          "subject": "STAT 112",
+          "score": 100,
+          "totalQuestions": 3,
+          "date": "2026-04-21T23:03:45.814Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "The mode is the:",
+              "options": [
+                "Middle value",
+                "Average value",
+                "Most frequent value",
+                "Largest value"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": 2,
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "subject": "STAT 122",
+          "score": 0,
+          "totalQuestions": 1,
+          "date": "2026-04-22T18:33:31.815Z",
+          "examDetails": [
+            {
+              "question": "A dataset has the following values:  2, 4, 6, 8, 10, What is the mean of the dataset?",
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1776883407637",
+      "name": "Mario",
+      "email": "satomic73@gmail.com",
+      "password": "$2a$10$lwS.qVl0q4kRsKmOKUvXQ.ltCQbuxTWgkZIZnzPmMm05ws0x0SXDW",
+      "activationPin": "T20XUP74",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "createdAt": "2026-04-22T18:43:27.637Z",
+      "scoreHistory": [
+        {
+          "subject": "STAT 112",
+          "score": 100,
+          "totalQuestions": 3,
+          "date": "2026-04-22T18:45:15.848Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": 1,
+              "isCorrect": true
+            },
+            {
+              "question": "The mode is the:",
+              "options": [
+                "Middle value",
+                "Average value",
+                "Most frequent value",
+                "Largest value"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": 2,
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "user_1780598785454",
+      "name": "Martins",
+      "email": "statverse938@gmail.com",
+      "password": "$2a$10$PIDnm/bKdM1MllC5zwMQfuFpGnMY6n.In3xetcHzQuZfJsqSOPelq",
+      "activationPin": "QAYXOHLP",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "createdAt": "2026-06-04T18:46:25.454Z"
+    }
+  ]
+}
