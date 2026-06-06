@@ -38,11 +38,26 @@ const saveQuestionsToJson = (questions) => {
   fs.writeFileSync(questionsFilePath, JSON.stringify({ questions }, null, 2));
 };
 
+// Helper: load users from JSON fallback
+const loadUsersFromJson = () => {
+  try {
+    const data = fs.readFileSync(path.join(__dirname, '../users.json'), 'utf8');
+    return JSON.parse(data).users || [];
+  } catch (err) {
+    return [];
+  }
+};
+
+// Helper: save users to JSON fallback
+const saveUsersToJson = (users) => {
+  fs.writeFileSync(path.join(__dirname, '../users.json'), JSON.stringify({ users }, null, 2));
+};
+
 // Get dashboard stats
 exports.getDashboardStats = async (req, res) => {
   try {
     if (mongoose.connection.readyState === 1) {
-      const totalUsers = await User.countDocuments();
+      const totalUsers = await User.countDocuments({ deleted: { $ne: true } });
       const totalPins = await ActivationPin.countDocuments();
       const usedPins = await ActivationPin.countDocuments({ status: 'used' });
       const unusedPins = totalPins - usedPins;
@@ -55,11 +70,13 @@ exports.getDashboardStats = async (req, res) => {
     const totalPins = pins.length;
     const usedPins = pins.filter(pin => pin.status === 'used').length;
     const unusedPins = totalPins - usedPins;
-    const totalUsers = 0;
+    const users = loadUsersFromJson();
+    const totalUsers = users ? users.filter(u => !u.deleted).length : 0;
 
     res.json({ totalUsers, totalPins, usedPins, unusedPins });
   } catch (err) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('getDashboardStats error:', err);
+    res.status(500).json({ message: err.message || 'Server error' });
   }
 };
 
@@ -67,69 +84,69 @@ exports.getDashboardStats = async (req, res) => {
 exports.generatePins = async (req, res) => {
   let { count } = req.body;
 
-  // ✅ Validate count
+  // Validate count
   count = Number(count);
 
   if (!count || count < 1) {
     return res.status(400).json({ message: 'Invalid pin count' });
   }
 
-  if (count > 200) {
-    return res.status(400).json({ message: 'Maximum 200 pins allowed at once' });
+  if (count > 2000) {
+    return res.status(400).json({ message: 'Maximum 2000 pins allowed at once' });
   }
 
-  // ✅ Helper to generate pin
+  // Helper to generate pin
   const generatePinCode = () =>
     Math.random().toString(36).substring(2, 10).toUpperCase();
 
   try {
-    // ✅ If MongoDB is connected
+    // If MongoDB is connected - ensure uniqueness and return generated pins
     if (mongoose.connection.readyState === 1) {
-      const batchSize = 50;
+      // Load existing pin codes to avoid duplicates
+      const existing = await ActivationPin.find().select('pinCode');
+      const existingSet = new Set(existing.map(p => p.pinCode));
+      const generated = [];
 
-      for (let i = 0; i < count; i += batchSize) {
-        const batch = [];
-
-        for (let j = 0; j < batchSize && i + j < count; j++) {
-          batch.push({
-            pinCode: generatePinCode(),
-            status: 'unused',
-            usedBy: null,
-            dateUsed: null,
-          });
+      while (generated.length < count) {
+        const candidate = generatePinCode();
+        if (!existingSet.has(candidate)) {
+          existingSet.add(candidate);
+          generated.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
         }
-
-        await ActivationPin.insertMany(batch);
       }
 
-      return res.json({ message: `${count} pins generated successfully` });
+      // Insert in batches to avoid large single insert
+      const batchSize = 100;
+      for (let i = 0; i < generated.length; i += batchSize) {
+        const slice = generated.slice(i, i + batchSize);
+        await ActivationPin.insertMany(slice);
+      }
+
+      // Return the raw codes so admin can distribute them immediately
+      return res.json({ message: `${count} pins generated successfully`, pins: generated.map(p => p.pinCode) });
     }
 
-    // ✅ Fallback mode (JSON file)
+    // Fallback mode (JSON file)
     const existingPins = loadPinsFromJson();
+    const existingSet = new Set(existingPins.map(p => p.pinCode));
     const newPins = [];
 
-    for (let i = 0; i < count; i++) {
-      newPins.push({
-        pinCode: generatePinCode(),
-        status: 'unused',
-        usedBy: null,
-        dateUsed: null,
-      });
+    while (newPins.length < count) {
+      const candidate = generatePinCode();
+      if (!existingSet.has(candidate)) {
+        existingSet.add(candidate);
+        newPins.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
+      }
     }
 
     const mergedPins = existingPins.concat(newPins);
     savePinsToJson(mergedPins);
 
-    return res.json({
-      message: `${count} pins generated successfully (fallback file mode)`,
-    });
+    return res.json({ message: `${count} pins generated successfully (fallback file mode)`, pins: newPins.map(p => p.pinCode) });
 
   } catch (err) {
     console.error('Generate pins error:', err);
-    return res.status(500).json({
-      message: err.message || 'Server error while generating pins',
-    });
+    return res.status(500).json({ message: err.message || 'Server error while generating pins' });
   }
 };
 
@@ -142,7 +159,18 @@ exports.getAllPins = async (req, res) => {
     }
 
     const pins = loadPinsFromJson();
-    res.json(pins);
+    const users = loadUsersFromJson();
+    const enrichedPins = pins.map(pin => {
+      if (pin.usedBy && users) {
+        const user = users.find(u => u._id === pin.usedBy);
+        if (user) {
+          return { ...pin, usedBy: { _id: user._id, name: user.name, email: user.email } };
+        }
+      }
+      return pin;
+    });
+
+    res.json(enrichedPins);
   } catch (err) {
     res.status(500).json({ message: 'Server error' });
   }
@@ -151,17 +179,38 @@ exports.getAllPins = async (req, res) => {
 // Get all users
 exports.getAllUsers = async (req, res) => {
   try {
-    const users = await User.find().select('-password');
-    res.json(users);
+    if (mongoose.connection.readyState === 1) {
+      const users = await User.find({ deleted: { $ne: true } }).select('-password');
+      return res.json(users);
+    }
+
+    const users = loadUsersFromJson();
+    res.json(users ? users.filter(u => !u.deleted) : []);
   } catch (err) {
     res.status(500).json({ message: 'Server error' });
   }
 };
 
-// Delete user
+// Delete user (soft delete to block future login/signup)
 exports.deleteUser = async (req, res) => {
   try {
-    await User.findByIdAndDelete(req.params.id);
+    if (mongoose.connection.readyState === 1) {
+      const user = await User.findById(req.params.id);
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      user.deleted = true;
+      await user.save();
+      return res.json({ message: 'User deleted' });
+    }
+
+    const users = loadUsersFromJson();
+    const userIndex = users.findIndex(u => u._id === req.params.id);
+    if (userIndex === -1) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    users[userIndex].deleted = true;
+    saveUsersToJson(users);
     res.json({ message: 'User deleted' });
   } catch (err) {
     res.status(500).json({ message: 'Server error' });

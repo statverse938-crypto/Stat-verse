@@ -13,7 +13,8 @@
         "Physics",
         "Chemistry"
       ],
-      "createdAt": "2026-03-15T01:38:01.781Z"
+      "createdAt": "2026-03-15T01:38:01.781Z",
+      "deleted": true
     },
     {
       "_id": "user_1773538754427",
@@ -28,7 +29,8 @@
         "Biology",
         "Government"
       ],
-      "createdAt": "2026-03-15T01:39:14.427Z"
+      "createdAt": "2026-03-15T01:39:14.427Z",
+      "deleted": true
     },
     {
       "_id": "user_1773539757967",
@@ -43,7 +45,8 @@
         "Biology",
         "Literature"
       ],
-      "createdAt": "2026-03-15T01:55:57.967Z"
+      "createdAt": "2026-03-15T01:55:57.967Z",
+      "deleted": true
     },
     {
       "_id": "user_1773540306121",
@@ -1583,6 +1586,80 @@
         "STAT 112"
       ],
       "createdAt": "2026-06-04T18:46:25.454Z"
+    },
+    {
+      "_id": "user_1780731257132",
+      "name": "mei",
+      "email": "enn@statscbt.com",
+      "password": "$2a$10$6wZ1.eaVlqd7chpqIt6vuesHgBvcR4iPtKd/cmKwJrMmE6ai9/W2O",
+      "activationPin": "UOVFHKXW",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 122",
+        "STAT 112"
+      ],
+      "deleted": false,
+      "createdAt": "2026-06-06T07:34:17.132Z"
+    },
+    {
+      "_id": "user_1780734226680",
+      "name": "jerate",
+      "email": "kc33123@gmail.com",
+      "password": "$2a$10$eZI1yy.UIFwzFbXSirYqje/4WjvmjRI10.76d.9z5xetg/YzeLKbu",
+      "activationPin": "CCIW7TZA",
+      "examYear": 2026,
+      "subjects": [
+        "STAT 112",
+        "STAT 122"
+      ],
+      "deleted": false,
+      "createdAt": "2026-06-06T08:23:46.681Z",
+      "scoreHistory": [
+        {
+          "subject": "STAT 112",
+          "score": 0,
+          "totalQuestions": 3,
+          "date": "2026-06-06T08:24:56.142Z",
+          "examDetails": [
+            {
+              "question": "The mean of the numbers 2, 4, 6, 8 is:",
+              "options": [
+                "4",
+                "5",
+                "6",
+                "8"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "Find the median of: 3, 7, 9, 11, 15",
+              "options": [
+                "7",
+                "9",
+                "10",
+                "11"
+              ],
+              "correctAnswer": 1,
+              "userAnswer": null,
+              "isCorrect": false
+            },
+            {
+              "question": "The mode is the:",
+              "options": [
+                "Middle value",
+                "Average value",
+                "Most frequent value",
+                "Largest value"
+              ],
+              "correctAnswer": 2,
+              "userAnswer": null,
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }

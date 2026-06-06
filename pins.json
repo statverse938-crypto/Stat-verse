@@ -72,16 +72,16 @@
     },
     {
       "pinCode": "UOVFHKXW",
-      "status": "unused",
-      "usedBy": null,
-      "dateUsed": null,
+      "status": "used",
+      "usedBy": "user_1780731257132",
+      "dateUsed": "2026-06-06T07:34:17.136Z",
       "_id": "temp_10"
     },
     {
       "pinCode": "CCIW7TZA",
-      "status": "unused",
-      "usedBy": null,
-      "dateUsed": null,
+      "status": "used",
+      "usedBy": "user_1780734226680",
+      "dateUsed": "2026-06-06T08:23:46.685Z",
       "_id": "temp_11"
     },
     {
@@ -5752,6 +5752,126 @@
     },
     {
       "pinCode": "SWQ7XYYC",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "P0QZ8FUV",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "7DK9HR0J",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "LLG8N6ZJ",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "QSBAZAR9",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "UBFNDA6Z",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "EKNJ41J6",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "33XZRFG4",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "Q4AVMEYI",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "JQIYTPQ3",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "HJWH4JV9",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "GNXBMSG3",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "K8LEIFA1",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "HHGVM72O",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "MYLR4TX3",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "KTAZQMHA",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "TZ8MQD21",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "RWYMVYE1",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "GP39IDBP",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "4GFUUVD5",
+      "status": "unused",
+      "usedBy": null,
+      "dateUsed": null
+    },
+    {
+      "pinCode": "M1MD9146",
       "status": "unused",
       "usedBy": null,
       "dateUsed": null

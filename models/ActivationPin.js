@@ -12,7 +12,8 @@ const activationPinSchema = new mongoose.Schema({
     default: 'unused',
   },
   usedBy: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
     default: null,
   },
   dateUsed: {

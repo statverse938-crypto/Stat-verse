@@ -5,9 +5,17 @@
       "content": "Variance is a measure of how spread out a set of data values is from the mean (average). It shows how much the values differ from the mean on average.\r\n\r\nIf the variance is small, the data points are close to the mean.\r\nIf the variance is large, the data points are widely spread out.\r\n\r\nIt is calculated by:\r\n\r\nFinding the mean\r\nSubtracting the mean from each value\r\nSquaring the differences\r\nFinding the average of those squared differences\r\n\r\nVariance is important because it helps us understand the consistency and variability of data.",
       "subject": "STAT 112",
       "createdBy": "admin@statscbt.com",
-      "images": [],
+      "images": [
+        {
+          "filename": "1780735168086-948454514.jpg",
+          "originalName": "WIN_20240722_15_32_00_Pro.jpg",
+          "path": "C:\\Users\\leo lawrence\\Desktop\\JAMB CBT APP\\BKANFD\\backend\\uploads\\1780735168086-948454514.jpg",
+          "mimetype": "image/jpeg",
+          "size": 117201
+        }
+      ],
       "_id": "1775210109938",
-      "updatedAt": "2026-04-27T23:12:10.089Z"
+      "updatedAt": "2026-06-06T08:39:28.094Z"
     }
   ]
 }

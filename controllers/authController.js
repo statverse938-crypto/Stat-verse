@@ -52,32 +52,40 @@ const saveUsersToFile = (users) => {
   }
 };
 
+// Helper to normalize pin comparisons
+const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const findPinByCode = async (pinCode) => {
+  const normalizedPinCode = pinCode.trim().toUpperCase();
+  const filePins = getPinsFromFile();
+
+  if (mongoose.connection.readyState === 1) {
+    const dbPin = await ActivationPin.findOne({ pinCode: new RegExp(`^${escapeRegex(normalizedPinCode)}$`, 'i') });
+    if (dbPin) {
+      return { pin: dbPin, source: 'db' };
+    }
+  }
+
+  if (filePins) {
+    const filePinIndex = filePins.findIndex(p => p.pinCode.trim().toUpperCase() === normalizedPinCode);
+    return {
+      pin: filePins[filePinIndex],
+      source: 'file',
+      filePins,
+      filePinIndex
+    };
+  }
+
+  return { pin: null, source: null };
+};
+
 // Verify activation pin
 exports.verifyPin = async (req, res) => {
   const { pinCode } = req.body;
   console.log('Verifying pin:', pinCode);
-  
-  try {
-    // Try JSON file first for testing
-    const pins = getPinsFromFile();
-    console.log('Pins loaded:', pins ? pins.length : 'null');
-    
-    if (pins) {
-      const pin = pins.find(p => p.pinCode.trim().toUpperCase() === pinCode.trim().toUpperCase());
-      console.log('Pin found:', pin ? 'yes' : 'no');
-      
-      if (!pin) {
-        console.log('Available pins:', pins.filter(p => p.status === 'unused').map(p => p.pinCode));
-        return res.status(400).json({ message: 'Invalid activation pin' });
-      }
-      if (pin.status === 'used') {
-        return res.status(400).json({ message: 'This pin has already been used' });
-      }
-      return res.json({ message: 'Pin is valid' });
-    }
 
-    // Fallback to database
-    const pin = await ActivationPin.findOne({ pinCode });
+  try {
+    const { pin } = await findPinByCode(pinCode);
     if (!pin) {
       return res.status(400).json({ message: 'Invalid activation pin' });
     }
@@ -105,64 +113,56 @@ exports.register = async (req, res) => {
   console.log('Registration attempt:', { name, email, examYear, pinCode });
 
   try {
-    // Check if pin is valid and unused (try JSON file first)
-    let pin = null;
-    let pinIndex = -1;
-    const pins = getPinsFromFile();
-
-    if (pins) {
-      pinIndex = pins.findIndex(p => p.pinCode.trim().toUpperCase() === pinCode.trim().toUpperCase());
-      pin = pins[pinIndex];
-    } else {
-      // Fallback to database
-      pin = await ActivationPin.findOne({ pinCode: new RegExp(`^${pinCode.trim()}$`, 'i') });
-    }
-
+    const { pin, source, filePins, filePinIndex } = await findPinByCode(pinCode);
     if (!pin || pin.status === 'used') {
       return res.status(400).json({ message: 'Invalid or used activation pin' });
     }
 
-    // Check if user exists (try JSON file first)
-    const users = getUsersFromFile();
+    const useDbUsers = mongoose.connection.readyState === 1;
+    let users = null;
     let existingUser = null;
 
-    if (users) {
-      existingUser = users.find(u => u.email === email);
+    if (useDbUsers) {
+      existingUser = await User.findOne({ $or: [{ email }, { name }] });
     } else {
-      existingUser = await User.findOne({ email });
+      users = getUsersFromFile() || [];
+      existingUser = users.find(u => u.email === email || u.name === name) || null;
     }
 
     if (existingUser) {
       return res.status(400).json({ message: 'User already exists' });
     }
 
-    // Hash password
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
     console.log('Password hashed successfully');
 
-    // Create user object
     const newUser = {
-      _id: `user_${Date.now()}`,
+      _id: useDbUsers ? undefined : `user_${Date.now()}`,
       name,
       email,
       password: hashedPassword,
-      activationPin: pinCode,
+      activationPin: pinCode.trim().toUpperCase(),
       examYear,
       subjects,
+      deleted: false,
       createdAt: new Date().toISOString()
     };
-    console.log('User object created:', { id: newUser._id, email: newUser.email });
+    console.log('User object created:', { id: newUser._id || '(db)' , email: newUser.email });
 
-    // Save user
-    if (users) {
-      // Save to JSON file
+    if (!useDbUsers) {
       console.log('Saving to JSON file...');
+      users = users || [];
       users.push(newUser);
-      saveUsersToFile(users);
-      console.log('User saved to JSON file');
+      try {
+        const usersPath = path.join(__dirname, '../users.json');
+        fs.writeFileSync(usersPath, JSON.stringify({ users }, null, 2));
+        console.log('User saved to JSON file');
+      } catch (err) {
+        console.error('Error saving users to JSON file:', err);
+        throw err;
+      }
     } else {
-      // Save to database
       console.log('Saving to database...');
       const user = new User(newUser);
       await user.save();
@@ -170,26 +170,22 @@ exports.register = async (req, res) => {
       console.log('User saved to database');
     }
 
-    // Mark pin as used
-    if (pins && pinIndex !== -1) {
-      // Update JSON file
+    if (source === 'file') {
       console.log('Updating pin status in JSON...');
-      pins[pinIndex].status = 'used';
-      pins[pinIndex].usedBy = newUser._id.toString();
-      pins[pinIndex].dateUsed = new Date().toISOString();
-      savePinsToFile(pins);
+      filePins[filePinIndex].status = 'used';
+      filePins[filePinIndex].usedBy = newUser._id.toString();
+      filePins[filePinIndex].dateUsed = new Date().toISOString();
+      savePinsToFile(filePins);
       console.log('Pin updated in JSON file');
     } else {
-      // Update database
       console.log('Updating pin status in database...');
       pin.status = 'used';
-      pin.usedBy = user._id;
+      pin.usedBy = newUser._id;
       pin.dateUsed = new Date();
       await pin.save();
       console.log('Pin updated in database');
     }
 
-    // Registration successful; prompt user to login
     res.json({ message: 'Registration successful. Please login to continue.' });
   } catch (err) {
     console.error('Registration error:', err);
@@ -214,7 +210,7 @@ exports.login = async (req, res) => {
       user = await User.findOne({ email });
     }
 
-    if (!user) {
+    if (!user || user.deleted) {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
@@ -251,7 +247,7 @@ exports.getProfile = async (req, res) => {
       user = await User.findById(req.user.id).select('-password');
     }
 
-    if (!user) {
+    if (!user || user.deleted) {
       return res.status(404).json({ message: 'User not found' });
     }
 
@@ -272,8 +268,8 @@ exports.updateProfile = async (req, res) => {
     
     if (users) {
       const userIndex = users.findIndex(u => u._id === req.user.id);
-      if (userIndex === -1) {
-        console.log('updateProfile: user not found in JSON');
+      if (userIndex === -1 || users[userIndex].deleted) {
+        console.log('updateProfile: user not found or deleted in JSON');
         return res.status(404).json({ message: 'User not found' });
       }
       
@@ -285,8 +281,8 @@ exports.updateProfile = async (req, res) => {
     } else {
       // Fallback to database
       const user = await User.findById(req.user.id);
-      if (!user) {
-        console.log('updateProfile: user not found in DB');
+      if (!user || user.deleted) {
+        console.log('updateProfile: user not found or deleted in DB');
         return res.status(404).json({ message: 'User not found' });
       }
       
@@ -307,24 +303,14 @@ exports.adminLogin = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    // Try to use database first
+    let admin = null;
+
     if (mongoose.connection.readyState === 1) {
-      let admin = await Admin.findOne({ email });
-      if (!admin) {
-        return res.status(400).json({ message: 'Invalid credentials' });
-      }
+      admin = await Admin.findOne({ email });
+    }
 
-      const isMatch = await bcrypt.compare(password, admin.password);
-      if (!isMatch) {
-        return res.status(400).json({ message: 'Invalid credentials' });
-      }
-
-      const payload = { user: { id: admin._id, role: 'admin' } };
-      const token = jwt.sign(payload, process.env.JWT_SECRET || 'secret', { expiresIn: '1h' });
-
-      res.json({ token });
-    } else {
-      // Fallback to JSON file if MongoDB is not connected
+    if (!admin) {
+      // Fallback to JSON file if MongoDB has no admin record or is disconnected
       const adminsPath = path.join(__dirname, '../admins.json');
       let admins = [];
       try {
@@ -334,21 +320,25 @@ exports.adminLogin = async (req, res) => {
         console.log('No admins.json file found');
       }
 
-      const admin = admins.find(a => a.email === email);
-      if (!admin) {
-        return res.status(400).json({ message: 'Invalid credentials' });
+      admin = admins.find(a => a.email === email);
+      if (admin) {
+        admin._id = admin.id;
       }
-
-      const isMatch = await bcrypt.compare(password, admin.password);
-      if (!isMatch) {
-        return res.status(400).json({ message: 'Invalid credentials' });
-      }
-
-      const payload = { user: { id: admin.id, role: 'admin' } };
-      const token = jwt.sign(payload, process.env.JWT_SECRET || 'secret', { expiresIn: '1h' });
-
-      res.json({ token });
     }
+
+    if (!admin) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+
+    const isMatch = await bcrypt.compare(password, admin.password);
+    if (!isMatch) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+
+    const payload = { user: { id: admin._id || admin.id, role: 'admin' } };
+    const token = jwt.sign(payload, process.env.JWT_SECRET || 'secret', { expiresIn: '1h' });
+
+    res.json({ token });
   } catch (err) {
     console.error('Admin login error:', err);
     res.status(500).json({ message: 'Server error' });
