@@ -43,6 +43,35 @@ app.get('/health', (req, res) => {
   });
 });
 
+// Test endpoint for debugging
+app.get('/test', async (req, res) => {
+  try {
+    const dbStatus = mongoose.connection.readyState === 1 ? 'connected' : 'disconnected';
+    let dbTest = null;
+    
+    if (dbStatus === 'connected') {
+      // Try a simple query
+      const User = require('./models/User');
+      const count = await User.countDocuments().exec();
+      dbTest = { status: 'ok', userCount: count };
+    }
+    
+    res.json({ 
+      status: 'ok', 
+      mongodb: dbStatus,
+      dbTest,
+      nodeEnv: process.env.NODE_ENV || 'not-set',
+      hasMongoUri: !!process.env.MONGODB_URI,
+      timestamp: new Date().toISOString()
+    });
+  } catch (err) {
+    res.status(500).json({ 
+      error: err.message,
+      mongodb: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
+    });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

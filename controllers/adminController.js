@@ -20,7 +20,12 @@ const loadPinsFromJson = () => {
 
 // Helper: save pins to JSON fallback
 const savePinsToJson = (pins) => {
-  fs.writeFileSync(pinsFilePath, JSON.stringify({ pins }, null, 2));
+  try {
+    fs.writeFileSync(pinsFilePath, JSON.stringify({ pins }, null, 2));
+  } catch (err) {
+    console.error('Warning: Could not save pins to JSON file:', err.message);
+    // On Vercel, file writes fail silently - this is expected
+  }
 };
 
 // Helper: load questions from JSON fallback
@@ -35,7 +40,12 @@ const loadQuestionsFromJson = () => {
 
 // Helper: save questions to JSON fallback
 const saveQuestionsToJson = (questions) => {
-  fs.writeFileSync(questionsFilePath, JSON.stringify({ questions }, null, 2));
+  try {
+    fs.writeFileSync(questionsFilePath, JSON.stringify({ questions }, null, 2));
+  } catch (err) {
+    console.error('Warning: Could not save questions to JSON file:', err.message);
+    // On Vercel, file writes fail silently - this is expected
+  }
 };
 
 // Helper: load users from JSON fallback
@@ -50,7 +60,12 @@ const loadUsersFromJson = () => {
 
 // Helper: save users to JSON fallback
 const saveUsersToJson = (users) => {
-  fs.writeFileSync(path.join(__dirname, '../users.json'), JSON.stringify({ users }, null, 2));
+  try {
+    fs.writeFileSync(path.join(__dirname, '../users.json'), JSON.stringify({ users }, null, 2));
+  } catch (err) {
+    console.error('Warning: Could not save users to JSON file:', err.message);
+    // On Vercel, file writes fail silently - this is expected
+  }
 };
 
 // Get dashboard stats
@@ -104,43 +119,48 @@ exports.generatePins = async (req, res) => {
   try {
     // If MongoDB is connected - ensure uniqueness and return generated pins
     if (mongoose.connection.readyState === 1) {
-      // Load existing pin codes to avoid duplicates
-      const existing = await ActivationPin.find().select('pinCode');
-      const existingSet = new Set(existing.map(p => p.pinCode));
-      const generated = [];
-      const generatedSet = new Set();
-      const maxAttempts = count * 10; // Prevent infinite loop
-      let attempts = 0;
+      try {
+        // Load existing pin codes to avoid duplicates
+        const existing = await ActivationPin.find().select('pinCode');
+        const existingSet = new Set(existing.map(p => p.pinCode));
+        const generated = [];
+        const generatedSet = new Set();
+        const maxAttempts = count * 10; // Prevent infinite loop
+        let attempts = 0;
 
-      while (generated.length < count && attempts < maxAttempts) {
-        const candidate = generatePinCode();
-        if (!existingSet.has(candidate) && !generatedSet.has(candidate)) {
-          existingSet.add(candidate);
-          generatedSet.add(candidate);
-          generated.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
+        while (generated.length < count && attempts < maxAttempts) {
+          const candidate = generatePinCode();
+          if (!existingSet.has(candidate) && !generatedSet.has(candidate)) {
+            existingSet.add(candidate);
+            generatedSet.add(candidate);
+            generated.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
+          }
+          attempts++;
         }
-        attempts++;
-      }
 
-      if (generated.length < count) {
-        return res.status(400).json({ message: `Could only generate ${generated.length} unique pins out of ${count} requested` });
-      }
+        if (generated.length < count) {
+          return res.status(400).json({ message: `Could only generate ${generated.length} unique pins out of ${count} requested` });
+        }
 
-      // Insert in batches to avoid large single insert
-      const batchSize = 100;
-      for (let i = 0; i < generated.length; i += batchSize) {
-        const slice = generated.slice(i, i + batchSize);
-        await ActivationPin.insertMany(slice, { ordered: false }).catch(err => {
-          // Ignore duplicate key errors during batch insert
-          if (err.code !== 11000) throw err;
-        });
-      }
+        // Insert in batches to avoid large single insert
+        const batchSize = 100;
+        for (let i = 0; i < generated.length; i += batchSize) {
+          const slice = generated.slice(i, i + batchSize);
+          await ActivationPin.insertMany(slice, { ordered: false }).catch(err => {
+            // Ignore duplicate key errors during batch insert
+            if (err.code !== 11000) throw err;
+          });
+        }
 
-      // Return the raw codes so admin can distribute them immediately
-      return res.json({ message: `${count} pins generated successfully`, pins: generated.map(p => p.pinCode) });
+        // Return the raw codes so admin can distribute them immediately
+        return res.json({ message: `${count} pins generated successfully`, pins: generated.map(p => p.pinCode) });
+      } catch (dbErr) {
+        console.error('Database error during pin generation:', dbErr);
+        // Fall through to JSON fallback
+      }
     }
 
-    // Fallback mode (JSON file)
+    // Fallback mode (JSON file) - for development or when DB is unavailable
     const existingPins = loadPinsFromJson();
     const existingSet = new Set(existingPins.map(p => p.pinCode));
     const newPins = [];
@@ -165,7 +185,7 @@ exports.generatePins = async (req, res) => {
     const mergedPins = existingPins.concat(newPins);
     savePinsToJson(mergedPins);
 
-    return res.json({ message: `${count} pins generated successfully (fallback file mode)`, pins: newPins.map(p => p.pinCode) });
+    return res.json({ message: `${count} pins generated successfully (fallback mode)`, pins: newPins.map(p => p.pinCode) });
 
   } catch (err) {
     console.error('Generate pins error:', err);
