@@ -61,8 +61,9 @@ exports.getDashboardStats = async (req, res) => {
       const totalPins = await ActivationPin.countDocuments();
       const usedPins = await ActivationPin.countDocuments({ status: 'used' });
       const unusedPins = totalPins - usedPins;
+      const totalQuestions = await Question.countDocuments();
 
-      return res.json({ totalUsers, totalPins, usedPins, unusedPins });
+      return res.json({ totalUsers, totalPins, usedPins, unusedPins, totalQuestions });
     }
 
     // fallback if DB is not connected
@@ -72,8 +73,9 @@ exports.getDashboardStats = async (req, res) => {
     const unusedPins = totalPins - usedPins;
     const users = loadUsersFromJson();
     const totalUsers = users ? users.filter(u => !u.deleted).length : 0;
+    const totalQuestions = loadQuestionsFromJson().length;
 
-    res.json({ totalUsers, totalPins, usedPins, unusedPins });
+    res.json({ totalUsers, totalPins, usedPins, unusedPins, totalQuestions });
   } catch (err) {
     console.error('getDashboardStats error:', err);
     res.status(500).json({ message: err.message || 'Server error' });
