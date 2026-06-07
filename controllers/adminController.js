@@ -108,20 +108,32 @@ exports.generatePins = async (req, res) => {
       const existing = await ActivationPin.find().select('pinCode');
       const existingSet = new Set(existing.map(p => p.pinCode));
       const generated = [];
+      const generatedSet = new Set();
+      const maxAttempts = count * 10; // Prevent infinite loop
+      let attempts = 0;
 
-      while (generated.length < count) {
+      while (generated.length < count && attempts < maxAttempts) {
         const candidate = generatePinCode();
-        if (!existingSet.has(candidate)) {
+        if (!existingSet.has(candidate) && !generatedSet.has(candidate)) {
           existingSet.add(candidate);
+          generatedSet.add(candidate);
           generated.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
         }
+        attempts++;
+      }
+
+      if (generated.length < count) {
+        return res.status(400).json({ message: `Could only generate ${generated.length} unique pins out of ${count} requested` });
       }
 
       // Insert in batches to avoid large single insert
       const batchSize = 100;
       for (let i = 0; i < generated.length; i += batchSize) {
         const slice = generated.slice(i, i + batchSize);
-        await ActivationPin.insertMany(slice);
+        await ActivationPin.insertMany(slice, { ordered: false }).catch(err => {
+          // Ignore duplicate key errors during batch insert
+          if (err.code !== 11000) throw err;
+        });
       }
 
       // Return the raw codes so admin can distribute them immediately
@@ -132,13 +144,22 @@ exports.generatePins = async (req, res) => {
     const existingPins = loadPinsFromJson();
     const existingSet = new Set(existingPins.map(p => p.pinCode));
     const newPins = [];
+    const newSet = new Set();
+    const maxAttempts = count * 10;
+    let attempts = 0;
 
-    while (newPins.length < count) {
+    while (newPins.length < count && attempts < maxAttempts) {
       const candidate = generatePinCode();
-      if (!existingSet.has(candidate)) {
+      if (!existingSet.has(candidate) && !newSet.has(candidate)) {
         existingSet.add(candidate);
+        newSet.add(candidate);
         newPins.push({ pinCode: candidate, status: 'unused', usedBy: null, dateUsed: null });
       }
+      attempts++;
+    }
+
+    if (newPins.length < count) {
+      return res.status(400).json({ message: `Could only generate ${newPins.length} unique pins out of ${count} requested` });
     }
 
     const mergedPins = existingPins.concat(newPins);
