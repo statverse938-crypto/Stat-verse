@@ -169,7 +169,11 @@ exports.generatePins = async (req, res) => {
 
   } catch (err) {
     console.error('Generate pins error:', err);
-    return res.status(500).json({ message: err.message || 'Server error while generating pins' });
+    return res.status(500).json({ 
+      message: 'Server error while generating pins', 
+      error: err.message,
+      dbStatus: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
+    });
   }
 };
 

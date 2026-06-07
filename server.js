@@ -34,6 +34,15 @@ app.use('/api/admin', require('./routes/admin'));
 app.use('/api/exam', require('./routes/exam'));
 app.use('/api/lecture-notes', require('./routes/lectureNotes'));
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({ 
+    status: 'ok', 
+    mongodb: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
